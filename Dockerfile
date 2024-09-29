@@ -15,10 +15,10 @@ COPY *.go ./
 RUN go build -o main
 
 # Create the directory for Let's Encrypt certificates
-RUN mkdir -p /certs
+#RUN mkdir -p /certs
 
 # Set proper permissions to ensure the app can write to this directory
-RUN chmod -R 755 /certs
+#RUN chmod -R 755 /certs
 
 # Expose the port the app runs on
 EXPOSE 80
